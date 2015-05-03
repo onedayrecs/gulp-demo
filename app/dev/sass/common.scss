@@ -1,0 +1,35 @@
+/*
+#overview
+Gulp入門サンプル
+ 
+サンプルファイルです
+*/
+ 
+/*#styleguide
+サンプル見出し１
+ 
+サンプルの見出しスタイル
+hoverすると青く2倍になる
+ 
+```
+<h1>見出し１</h1>
+```
+*/
+/*
+* base
+*/
+@import "base/setting";
+@import "base/default/mixin";
+@import "base/default/define";
+@import "base/default/reset";
+@import "base/util";
+@import "base/basic";
+/*
+* layout
+*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/contents";
+@import "layout/main";
+@import "layout/side";
+
