@@ -50,6 +50,7 @@ gulp.task("server", function() {
 
 //watch
 gulp.task("default",['server'],function() {
+	gulp.watch("app/dev/ejs/**/*.ejs",["ejs"]);
     gulp.watch(["app/dev/js/**/*.js",'!'+"app/dev/js/min/**/*.js"],["js"]);
     gulp.watch("app/dev/sass/**/*.scss",["sass"]);
 });
