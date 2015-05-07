@@ -15,3 +15,10 @@
 }
 
 @include util(def);
+
+.pull-right{
+	float:right;
+}
+.pull-left{
+	float:left;
+}

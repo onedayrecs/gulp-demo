@@ -1,0 +1,38 @@
+.formbox{
+	width: 90%;
+	margin: 0 auto 1.5rem auto;
+	padding:1rem;
+}
+.formbox-body{
+	padding:0 3.5rem;
+}
+
+.label-a{
+	width: 100%;
+	display: inline-block;
+}
+
+.input-a{
+	width:45%;
+	@include rem(16);
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	padding: .6rem 1rem;
+	vertical-align: middle;
+}
+
+.select-a{
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-indent: 1em;
+    background:$color-a url(../img/icon/pulldown.png) no-repeat;
+    background-size:20px auto;
+    background-position: 98% center;
+    width:30%;
+    height: 38px;
+    line-height: 38px;
+    font-size: 15px;
+    vertical-align: middle;
+    border:1px solid #CCC;
+}

@@ -25,36 +25,80 @@
     <div class="wrapper" id="js_wrapper">
  
         <header class="header">
-            <div class="header_inner">
-                <div class="header_logo"></div>
-                <div class="header_module"></div>
-                <div class="header_module"></div>
-                <div class="header_module"></div>
+            <div class="header-inner">
+                <div class="header-logo">DMM.E 管理</div>
             </div>
         </header>
-            <!-- start contents -->
-            <div class="main_visual">
-                <div class="main_visual_inner">
-                    <img src="http://placehold.it/980x520" height="520" width="980" alt="">
-                </div>
-            </div>
+            
  
             <!-- start contents -->
             <div class="contents">
                 <div class="contents_inner">
-                    <div class="main"></div>
-                    <aside class="side"></aside>
-                </div>
-            </div>
+                    <div class="main">
+                        <header class="main-header">
+	<nav>
+		<ul class="main-nav">
+			<li class="active"><a href="./">イベント</a></li>
+			<li><a href="user.html">ユーザー</a></li>
+			<li><a href="#">通知</a></li>
+			<li><a href="#">監視</a></li>
+			<li><a href="#">経理</a></li>
+		</ul>
+	</nav>
+</header>
+                        <div class="main-body">
+                        <form>
+                        <section class="formbox">
+                           <label class="label-a" for="serch"><h2 class="heading-a">キーワード検索</h2></label>
+                           <div class="formbox-body">
+                             <input class="input-a" type="serch" name="serch" value="" placeholder="検索キーワードを入力">
+                             <select name="menu-serch" class="select-a u_ml15 u_mr15">
+                                 <option value="">イベント検索</option>
+                                 <option value="">イベント検索２</option>
+                             </select>
+                             <button type="" class="btn btn-default">検索</button>
+                           </div>
+                        </section>
+
+                        <section class="formbox">
+                           <label class="label-a" for="serch"><h2 class="heading-a">ID検索</h2></label>
+                           <div class="formbox-body">
+                             <input class="input-a" type="serch" name="serch" value="" placeholder="検索IDを入力">
+                             <select name="menu-serch" class="select-a u_ml15 u_mr15">
+                                 <option value="">イベント検索</option>
+                                 <option value="">イベント検索２</option>
+                             </select>
+                             <button type="" class="btn btn-default">検索</button>
+                           </div>
+                        </section>
+
+                        </form>
+
+                        <section class="formbox">
+                           <label class="label-a" for="serch"><h2 class="heading-a">新規登録</h2></label>
+                           <div class="formbox-body">
+                             <ul class="list-a">
+                                <li><span>クライアント登録</span><a href="#" class="btn btn-default">登録</a></li>
+                                <li><span>会場登録</span><a href="#" class="btn btn-default">登録</a></li>
+                                <li><span>イベント登録</span><a href="#" class="btn btn-default">登録</a></li>
+                                <li><span>イベントグループ登録</span><a href="#" class="btn btn-default">登録</a></li>
+                             </ul>
+                           </div>
+                        </section>
+                        </div>
+                        </div>
+                    </div>
+                    
             <!-- end contents -->
  
     <footer class="footer">
         <div class="footer_inner">
-            <small>copyright</small>
+            <small>Copyright © since 1998 DMM All Rights Reserved.</small>
         </div>
     </footer>
 </div>
 <!-- end wrapper -->
         <script src="js/vendor/jquery-1.11.3.min.js"></script>
+        <script src="js/min/common.js"></script>
     </body>
 </html>
