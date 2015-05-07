@@ -1,7 +1,7 @@
 .header{
     width: 100%;
 }
-.header_inner{
+.header-inner{
     width: $size_max; //setting.scssに記述
     height: 80px;
     margin: 0 auto;
@@ -9,13 +9,13 @@
     padding: 10px;
     @extend %clearfix;
 }
-.header_logo{
+.header-logo{
     float: left;
     width: 200px;
     height: 60px;
     background: #fff;
 }
-.header_module{
+.header-module{
     float: right;
     width: 150px;
     height: 60px;

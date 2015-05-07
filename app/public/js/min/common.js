@@ -1,1 +1,1 @@
-!function(){window.addEventListener("load",function(){alert("loaded")})}();
+$(function(){$(".main-nav li a").each(function(){var a=$(this).attr("href");location.href.match(a)?$(this).addClass("active"):$(this).removeClass("active")})});

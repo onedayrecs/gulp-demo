@@ -1,0 +1,27 @@
+.main-nav{
+	  list-style: none;
+	  padding:0;
+	  margin:0;
+	  @extend %clearfix;
+	  & > li{
+	  	float:left;
+	  	width:20%;
+	  	text-align:center;
+	  	border:1px solid #999;
+	  	border-radius:1rem 1rem 0 0 ;
+	  	background-color:#D5D5D5;
+	  	& > a{
+	  		text-decoration:none;
+	  		width: 100%;
+	  		display: inline-block;
+	  		padding: 1.5rem;
+	  		color:#000;
+	  	}
+	  	&:hover{
+	  		background-color:#fff;
+	  	}
+	  	&.active{
+	  		background-color:#fff;
+	  	}
+	  }
+}

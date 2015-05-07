@@ -1,0 +1,21 @@
+.main-nav {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .main-nav > li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    border: 1px solid #999;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #999; }
+    .main-nav > li > a {
+      text-decoration: none;
+      width: 100%;
+      display: inline-block;
+      padding: 1.5rem;
+      color: #000; }
+    .main-nav > li:hover {
+      background-color: #fff; }
+    .main-nav > li.is-active {
+      background-color: #fff; }

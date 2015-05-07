@@ -1,0 +1,12 @@
+.list-a{
+	padding-left: 0;
+	list-style: none;
+	& > li{
+		margin-bottom:1rem;
+	} 
+	span{
+		min-width:25rem;
+		display: inline-block;
+		@include rem(15);
+	}
+}

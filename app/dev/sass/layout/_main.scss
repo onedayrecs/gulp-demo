@@ -1,6 +1,13 @@
 .main{
-    float: left;
-    width: 70%;
-    background: #eee;
-    min-height: 600px;
+	float: left;
+	width: 100%;
+	min-height: 600px;
+	margin-bottom: 1.5rem;
+}
+.main-body{
+	padding:2rem 0;
+	border: 1px solid $color-a;
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
