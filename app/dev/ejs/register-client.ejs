@@ -1,0 +1,38 @@
+<% var title = "クライアント登録 - イベント管理 - DMM.Event"; %>
+<% include common/_head %>
+<% include common/_header %>
+            
+ 
+            <!-- start contents -->
+            <div class="contents">
+                <div class="contents_inner">
+                    <div class="main">
+                        <h1 class="heading-b">クライアント登録</h1>
+                        <ol class="breadcrumb">
+                          <li><a href="index.html">イベント管理</a></li>
+                          <li class="active">クライアント登録</li>
+                        </ol>
+                        <div class="main-body u_pb60">
+                            <form>
+                             <table class="table table-a">
+                              <tbody>
+                                 <tr><th>クライアント名</th><td><input class="input-a width-100" type="text" name="client-name"></td></tr>
+                                 <tr><th>住所</th><td><input class="input-a width-100" type="text" name="client-adress"></td></tr>
+                                 <tr><th>電話番号</th><td><input class="input-a" type="tell" name="client-tell"></td></tr>
+                                 <tr><th>備考</th><td><textarea class="input-a width-100 textarea-a" name="client-remarks" rows="5"></textarea> </td></tr>
+                                 <tfoot>
+                                     <tr><td colspan="2"><a class="btn btn-next btn-middle" href="register-client-bank.html">次へ</a></td></tr>
+                                 </tfoot>
+                              </tbody>
+                             </table>
+                             
+                            </form>                       
+                        </div>
+                    </div>
+                </div>
+           </div>
+                    
+            <!-- end contents -->
+ 
+<% include common/_footer %>
+<% include common/_script %>

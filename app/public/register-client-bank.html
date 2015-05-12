@@ -11,7 +11,7 @@
  
      <head>
          <meta charset="UTF-8">
-         <title>test</title>
+         <title>口座情報登録 - クライアント登録 - イベント管理 - DMM.Event</title>
          <meta name="description" content="">
          <meta name="keywords" content="">
          <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,22 +34,32 @@
             <!-- start contents -->
             <div class="contents">
                 <div class="contents_inner">
-                    <div class="main">
-                        <header class="main-header">
-	<nav>
-		<ul class="main-nav">
-			<li class="active"><a href="./">イベント</a></li>
-			<li><a href="user.html">ユーザー</a></li>
-			<li><a href="#">通知</a></li>
-			<li><a href="#">監視</a></li>
-			<li><a href="#">経理</a></li>
-		</ul>
-	</nav>
-</header>
+                    <div class="main">                 
+                        <h1 class="heading-b">口座情報登録</h1>
+                        <ol class="breadcrumb">
+                          <li><a href="index.html">イベント管理</a></li>
+                          <li><a href="register-client.html">クライアント登録</a></li>
+                          <li class="active">口座情報登録</li>
+                        </ol>
+                        <div class="main-body u_pb60">
+                            <form>
+                             <table class="table table-a">
+                              <tbody>
+                                 <tr><th>銀行名</th><td class="u_pt20"><input class="input-a width-100" type="text" name="clientname"></td></tr>
+                                 <tr><th>支店名</th><td><input class="input-a" type="text" name="adress"></td></tr>
+                                 <tr><th>口座番号</th><td><input class="input-a width-100" type="number" name="tell"></td></tr>
+                                 <tfoot>
+                                     <tr><td colspan="2"><a class="btn btn-register btn-middle" href="#">クライアントを登録する</a></td></tr>
+                                 </tfoot>
+                              </tbody>
+                             </table>
+                             
+                            </form>                       
+                        </div>
                     </div>
-                    
                 </div>
-            </div>
+           </div>
+                    
             <!-- end contents -->
  
     <footer class="footer">

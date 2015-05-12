@@ -1,0 +1,59 @@
+<% var title = "イベント登録 - イベント管理 - DMM.Event"; %>
+<% include common/_head %>
+<% include common/_header %>
+            
+ 
+            <!-- start contents -->
+            <div class="contents">
+                <div class="contents_inner">
+                    <div class="main">
+                        <h1 class="heading-b">イベント登録</h1>
+                        <ol class="breadcrumb">
+                          <li><a href="index.html">イベント管理</a></li>
+                          <li class="active">イベント登録</li>
+                        </ol>
+                        <div class="main-body u_pb60">
+                            <form>
+                             <table class="table table-b">
+                              <tbody>
+                                 <tr><th>イベント名</th><td><input class="input-a width-100" type="text" name="event-name"></td></tr>
+                                 <tr><th>画像</th>
+                                   <td>
+                                     <div class="body-thumbnails">
+                                         <div class="thumbnail"><img src="http://placehold.it/350x150"></div>
+                                         <div class="thumbnail"><img src="http://placehold.it/350x150"></div>
+                                         <div class="thumbnail"><img src="http://placehold.it/350x150"></div>
+                                         <div class="thumbnail"><img src="http://placehold.it/350x150"></div>
+                                         <div class="thumbnail"><img src="http://placehold.it/350x150"></div>
+                                     </div>
+                                     <input type="file" multiple>
+                                   </td>
+                                 </tr>
+                                
+                                 <tr><th>説明文</th><td><textarea class="input-a width-100 textarea-a" name="event-remarks" rows="15"></textarea> </td></tr>
+                                 <tr><th>注意事項</th><td><textarea class="input-a width-100 textarea-a" name="event-remarks" rows="5"></textarea> </td></tr>
+                                 <tr><th>会場名</th>
+                                   <td>
+                                       <input class="input-a u_mr15" type="serch" name="event-palace-serch" value="" placeholder="検索キーワードを入力">
+                                       <button class="btn btn-default">検索</button>
+                                       <a class="btn btn-save pull-right">マスタ登録</a>
+                                   </td>
+                               </tr>
+                                 <tr><th>会場住所</th><td>　　　　　</td></tr>
+                                 <tr><th>地図</th><td>　　　　　</td></tr>
+                                 <tr><th>動画URL</th><td><input type="url" class="input-a width-100" name="event-url"></td></tr>
+                                 <tr><th>関連URL</th><td><input type="url" class="input-a width-100" name="event-related-url"></td></tr>
+                                 <tr><th>座席配置登録</th><td><a class="btn btn-default">座席配置登録へ</a></td></tr>                                
+                              </tbody>
+                             </table>
+                             
+                            </form>                       
+                        </div>
+                    </div>
+                </div>
+           </div>
+                    
+            <!-- end contents -->
+ 
+<% include common/_footer %>
+<% include common/_script %>

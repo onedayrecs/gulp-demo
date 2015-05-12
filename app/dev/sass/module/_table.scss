@@ -1,0 +1,66 @@
+// Baseline styles
+
+.table {
+  width: 90%;
+  max-width: 100%;
+  margin:0 auto $line-height-computed;
+  // Cells
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $table-cell-padding;
+        line-height: $line-height-base;
+        vertical-align: middle;
+        
+      }
+    }
+  }
+  // Bottom align for column headings
+  > thead > tr > th {
+    vertical-align: bottom;
+    border-bottom: 2px solid $table-border-color;
+    @include rem(18);
+    margin-bottom:$line-height-computed;
+  }
+  // Remove top border from thead by default
+  > caption + thead,
+  > colgroup + thead,
+  > thead:first-child {
+    > tr:first-child {
+      > th,
+      > td {
+        border-top: 0;
+      }
+    }
+  }
+  // Account for multiple tbody instances
+  > tbody + tbody {
+    border-top: 2px solid $table-border-color;
+  }
+
+  // Nesting
+  .table {
+    background-color: $body-bg;
+  }
+}
+.table-a > tbody > tr > th{
+  width:20%;
+  text-align:right;
+}
+.table-a > tfoot > tr > td{
+  text-align:center;
+}
+.table-b{
+  width:96%;
+  & > tbody > tr > th{
+    width:13%;
+    text-align:right;
+    vertical-align: top;
+    padding-top: 2rem;
+  }
+}
+
+//table type

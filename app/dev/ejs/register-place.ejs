@@ -1,0 +1,38 @@
+<% var title = "会場登録 - イベント管理 - DMM.Event"; %>
+<% include common/_head %>
+<% include common/_header %>
+            
+ 
+            <!-- start contents -->
+            <div class="contents">
+                <div class="contents_inner">
+                    <div class="main">
+                        <h1 class="heading-b">会場登録</h1>
+                        <ol class="breadcrumb">
+                          <li><a href="index.html">イベント管理</a></li>
+                          <li class="active">会場登録</li>
+                        </ol>
+                        <div class="main-body u_pb60">
+                            <form>
+                             <table class="table table-a">
+                              <tbody>
+                                 <tr><th>会場名</th><td><input class="input-a width-100" type="text" name="place-name"></td></tr>
+                                 <tr><th>住所</th><td><input class="input-a width-100" type="text" name="place-adress"></td></tr>
+                                 <tr><th>電話番号</th><td><input class="input-a" type="tell" name="place-tell"></td></tr>
+                                 <tr><th>備考</th><td><textarea class="input-a width-100 textarea-a" name="place-remarks" rows="5"></textarea> </td></tr>
+                                 <tr><th>座席パターン名</th><td><input class="input-a" type="text" name="place-pattern"></td></tr>
+                                 <tr><th>座席図</th><td><input type="file" name="place-map"></td></tr>
+                                 <tr><th>座席配置登録</th><td><a class="btn btn-default">座席配置登録へ</a></td></tr>                                
+                              </tbody>
+                             </table>
+                             
+                            </form>                       
+                        </div>
+                    </div>
+                </div>
+           </div>
+                    
+            <!-- end contents -->
+ 
+<% include common/_footer %>
+<% include common/_script %>

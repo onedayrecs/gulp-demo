@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 2rem;
   min-width: 10rem;
   @inclide rem(14);
   margin-bottom: 0; // For input.btn
@@ -22,4 +22,17 @@
 
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
+}
+.btn-next {
+  @include button-variant($btn-next-color, $btn-next-bg, $btn-next-border);
+}
+.btn-register {
+  @include button-variant($btn-register-color, $btn-register-bg, $btn-register-border);
+}
+.btn-save {
+  @include button-variant($btn-save-color, $btn-save-bg, $btn-save-border);
+}
+.btn-middle{
+  padding-left:5rem;
+  padding-right:5rem;
 }

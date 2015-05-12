@@ -4,7 +4,7 @@
 
 // clum width
 $gutter: 0;
-$size_max: 980px;
+$size_max: 1080px;
 $size_min: 320px;
 
 // scale (sprite生成で使用)
@@ -14,3 +14,53 @@ $default-scale:1;
 $btn-default-color:#000;
 $btn-default-bg:#fff;
 $btn-default-border:#000;
+
+$btn-next-color:#fff;
+$btn-next-bg:#008000;
+$btn-next-border:#ccc;
+
+$btn-register-color:#fff;
+$btn-register-bg:#ffa500;
+$btn-register-border:#ccc;
+
+$btn-save-color:#fff;
+$btn-save-bg:#696969;
+$btn-save-border:#000;
+
+//breadcrumb
+$breadcrumb-padding-vertical:1rem;
+$breadcrumb-padding-horizontal:1rem;
+$breadcrumb-bg: transparent;
+$breadcrumb-color: #999;
+$breadcrumb-active-color:#00bfff;
+//** Textual separator for between breadcrumb elements
+$breadcrumb-separator:          "/" !default;
+
+
+//border
+$border-radius-base:5px;
+
+//color
+$color-a:#ccc;
+$color-b:#999;
+$color-c:#00bfff;
+$link-color:#0086b3;
+$body-bg:#fff;
+
+//boot
+$line-height-computed: 2rem;
+
+//text
+$line-height-base: 1.3;
+
+//table
+$table-cell-padding:1rem;
+$table-border-color:#ddd;
+
+//thumbnail
+$thumbnail-padding: .5rem;
+$thumbnail-bg: #fff;
+$thumbnail-border: #ccc;
+$thumbnail-border-radius: 5px;
+$thumbnail-caption-padding:1rem;
+$thumbnail-caption-color: #999;
