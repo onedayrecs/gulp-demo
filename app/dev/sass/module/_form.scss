@@ -20,7 +20,9 @@
 	padding: .6rem 1rem;
 	vertical-align: middle;
 }
-
+.textarea-a{
+	resize:vertical;
+}
 .select-a{
 	-webkit-appearance: button;
     -moz-appearance: button;
@@ -35,4 +37,7 @@
     font-size: 15px;
     vertical-align: middle;
     border:1px solid #CCC;
+}
+.width-100{
+	width:100%;
 }
