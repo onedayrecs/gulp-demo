@@ -695,59 +695,24 @@ th {
 .u_pl60 {
   padding-left: 60px !important; }
 
-.u_mt65 {
-  margin-top: 65px !important; }
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
 
-.u_mr65 {
-  margin-right: 65px !important; }
+.clearfix:after {
+  clear: both; }
 
-.u_mb65 {
-  margin-bottom: 65px !important; }
-
-.u_ml65 {
-  margin-left: 65px !important; }
-
-.u_pt65 {
-  padding-top: 65px !important; }
-
-.u_pr65 {
-  padding-right: 65px !important; }
-
-.u_pb65 {
-  padding-bottom: 65px !important; }
-
-.u_pl65 {
-  padding-left: 65px !important; }
-
-.u_mt70 {
-  margin-top: 70px !important; }
-
-.u_mr70 {
-  margin-right: 70px !important; }
-
-.u_mb70 {
-  margin-bottom: 70px !important; }
-
-.u_ml70 {
-  margin-left: 70px !important; }
-
-.u_pt70 {
-  padding-top: 70px !important; }
-
-.u_pr70 {
-  padding-right: 70px !important; }
-
-.u_pb70 {
-  padding-bottom: 70px !important; }
-
-.u_pl70 {
-  padding-left: 70px !important; }
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 .pull-right {
-  float: right; }
+  float: right !important; }
 
 .pull-left {
-  float: left; }
+  float: left !important; }
 
 * {
   box-sizing: border-box; }
@@ -1106,6 +1071,13 @@ a {
 
 .width-100 {
   width: 100%; }
+
+.checkbox-body label {
+  width: 19%;
+  display: inline-block;
+  line-height: 1.5; }
+  .checkbox-body label input {
+    margin-right: .5rem; }
 
 .heading-a {
   font-size: 15px;
