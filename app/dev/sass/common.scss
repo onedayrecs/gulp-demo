@@ -22,6 +22,7 @@ hoverすると青く2倍になる
 @import "base/default/mixin";
 @import "base/default/define";
 @import "base/default/normalize";
+@import "base/sprite/sprite";
 @import "base/util";
 @import "base/basic";
 /*
@@ -43,3 +44,4 @@ hoverすると青く2倍になる
 @import "module/list";
 @import "module/table";
 @import "module/thumbnail";
+@import "module/icon";

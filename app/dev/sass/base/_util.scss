@@ -1,7 +1,7 @@
 
-@mixin util($multiple,$start:0,$end:14){
+@mixin util($multiple,$start:0,$end:12){
 	@if $multiple == def {
-		@for $i from 0 through 14 {
+		@for $i from 0 through 12 {
 			.u_mt#{$i * 5} { margin-top: 5px * $i !important; }
 			.u_mr#{$i * 5} { margin-right: 5px * $i !important; }
 			.u_mb#{$i * 5} { margin-bottom: 5px * $i !important; }
@@ -16,9 +16,16 @@
 
 @include util(def);
 
+//Floats
+.clearfix {
+  @include clearfix;
+}
+.center-block {
+  @include center-block;
+}
 .pull-right{
-	float:right;
+	float:right !important;
 }
 .pull-left{
-	float:left;
+	float:left !important;
 }
