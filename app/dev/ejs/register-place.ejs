@@ -12,7 +12,20 @@
                           <li><a href="index.html">イベント管理</a></li>
                           <li class="active">会場登録</li>
                         </ol>
-                        <div class="main-body u_pb60">
+                        <div ng-class="{ notEmpty : myModel }" class="main-body u_pb60">
+                            Hello <span ng-bind="myModel"></span> !!!<!-- ③ -->
+                            <div><input type="text" ng-model="myModel"></div><!-- ④ -->
+                            <div ng-show="myModel">こんにちわ</div>
+                            <div ng-hide="myModel">入力してください！</div>
+                            <div ng-if="myModel==='World'">Hello World 完成！</div>
+                            <style>
+                              .notEmpty { background-color: red; }
+                          </style>
+                          <ul ng-init="items = ['html5', 'experts', 'jp']">
+                            <li ng-repeat="item in items">
+                              <p ng-bind="item"</p>
+                              </li>
+                          </ul>
                             <form>
                              <table class="table table-a">
                               <tbody>

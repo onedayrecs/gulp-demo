@@ -1,26 +1,26 @@
 
 <!DOCTYPE html>
-    <!--[if IE 7]>
+<!--[if IE 7]>
     <html class="no-js ie7" prefix="og: http://ogp.me/ns#"><![endif]-->
-    <!--[if IE 8]>
+<!--[if IE 8]>
     <html class="no-js ie8 lt-ie8" prefix="og: http://ogp.me/ns#"><![endif]-->
-    <!--[if IE 9]>
+<!--[if IE 9]>
     <html class="no-js ie9 lt-ie9" prefix="og: http://ogp.me/ns#"><![endif]-->
     <!--[if gt IE 9]><!-->
- <html lang="ja" class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
- 
-     <head>
-         <meta charset="UTF-8">
-         <title>会場登録 - イベント管理 - DMM.Event</title>
-         <meta name="description" content="">
-         <meta name="keywords" content="">
-         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1">
-         
-         <link rel="stylesheet" href="./css/common.css">
+    <html ng-app lang="ja" class="no-js" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+    <head>
+        <meta charset="UTF-8">
+        <title>会場登録 - イベント管理 - DMM.Event</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-     </head>
+        <link rel="stylesheet" href="./css/common.css">
+
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>
+    </head>
 <body>
     <div class="wrapper" id="js_wrapper">
  
@@ -40,7 +40,20 @@
                           <li><a href="index.html">イベント管理</a></li>
                           <li class="active">会場登録</li>
                         </ol>
-                        <div class="main-body u_pb60">
+                        <div ng-class="{ notEmpty : myModel }" class="main-body u_pb60">
+                            Hello <span ng-bind="myModel"></span> !!!<!-- ③ -->
+                            <div><input type="text" ng-model="myModel"></div><!-- ④ -->
+                            <div ng-show="myModel">こんにちわ</div>
+                            <div ng-hide="myModel">入力してください！</div>
+                            <div ng-if="myModel==='World'">Hello World 完成！</div>
+                            <style>
+                              .notEmpty { background-color: red; }
+                          </style>
+                          <ul ng-init="items = ['html5', 'experts', 'jp']">
+                            <li ng-repeat="item in items">
+                              <p ng-bind="item"</p>
+                              </li>
+                          </ul>
                             <form>
                              <table class="table table-a">
                               <tbody>
