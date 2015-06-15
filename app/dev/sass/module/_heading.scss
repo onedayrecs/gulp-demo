@@ -1,3 +1,14 @@
+/*
+ #見出し
+ 
+見出しです
+ 
+## 汎用見出し
+ 
+    <h1 class="heading-a">見出し</h1>
+    <h2 class="heading-b">見出し</h2>
+ 
+*/
 .heading-a{
 	@include rem(15);
 }

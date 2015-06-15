@@ -1,5 +1,7 @@
-# gulp-demo
-gulpを使用したコーディングデモ
+/*
+# Style Guide
+スタイルガイドです。
 
 ## メンバー
-jb-matsunaga
+matsunaga
+*/

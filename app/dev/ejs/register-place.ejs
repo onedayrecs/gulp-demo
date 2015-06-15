@@ -20,20 +20,42 @@
                             <div ng-if="myModel==='World'">Hello World 完成！</div>
                             <style>
                               .notEmpty { background-color: red; }
-                          </style>
+                            </style>
                           <ul ng-init="items = ['html5', 'experts', 'jp']">
                             <li ng-repeat="item in items">
-                              <p ng-bind="item"</p>
-                              </li>
+                                <p ng-bind="item"</p>
+                            </li>
                           </ul>
-                            <form>
+                          <div ng-init="qty=1;cost=2">
+                            <b>Invoice:</b>
+                            <div>
+                              Quantity: <input type="number"ng-model="qty" required>
+                            </div>
+                            <div>
+                              Costs: <input type="number"ng-model="cost" required>
+                            </div>
+                            <div>
+                              <b>Total:</b> {{qty * cost | currency}}
+                            </div>
+                            <!-- UIロジックの追加：コントローラー -->
+                            
+                            <form name="demoForm" novalidate>
                              <table class="table table-a">
                               <tbody>
-                                 <tr><th>会場名</th><td><input class="input-a width-100" type="text" name="place-name"></td></tr>
+                                 <tr><th>会場名</th><td>
+                                 <input ng-model="demoModal" ng-required="true" class="input-a width-100" type="text" name="placeName"><br>
+                                 <p ng-show="demoForm.placeName.$error.required">入力必須です</p></td></tr>
+                                 
                                  <tr><th>住所</th><td><input class="input-a width-100" type="text" name="place-adress"></td></tr>
-                                 <tr><th>電話番号</th><td><input class="input-a" type="tell" name="place-tell"></td></tr>
+                                 <tr><th>電話番号</th><td>
+                                 <input type="text" name="input4" ng-model="demoModel2" ng-maxlength="4" ng-pattern="/^[a-zA-Z0-9]*$/" ng-required="true" class="input-a">
+                                  <p ng-show="demoForm.input4.$error.required">入力必須です。</p>
+                                  <p ng-show="demoForm.input4.$error.maxlength">4文字までです</p>
+                                  <p ng-show="demoForm.input4.$error.pattern">半角数値のみです</p>
+                                 </td></tr>
                                  <tr><th>備考</th><td><textarea class="input-a width-100 textarea-a" name="place-remarks" rows="5"></textarea> </td></tr>
-                                 <tr><th>座席パターン名</th><td><input class="input-a" type="text" name="place-pattern"></td></tr>
+                                 <tr><th>座席パターン名</th><td>
+                                 <input class="input-a" type="text" name="place-pattern"></td></tr>
                                  <tr><th>座席図</th><td><input type="file" name="place-map"></td></tr>
                                  <tr><th>座席配置登録</th><td><a class="btn btn-default">座席配置登録へ</a></td></tr>                                
                               </tbody>

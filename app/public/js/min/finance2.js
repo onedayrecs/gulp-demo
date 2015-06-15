@@ -1,0 +1,1 @@
+angular.module("finance2",[]).factory("currencyConverter",function(){function r(r,n,c){return r*e[c]*1/e[n]}var n=["USD","EUR","CNY"],e={USD:1,EUR:.74,CNY:6.09};return{currencies:n,convert:r}});
