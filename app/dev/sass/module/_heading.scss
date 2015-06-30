@@ -11,6 +11,7 @@
 */
 .heading-a{
 	@include rem(15);
+  color:black ;
 }
 .heading-b{
 	@include rem(20);

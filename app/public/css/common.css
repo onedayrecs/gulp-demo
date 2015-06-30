@@ -862,42 +862,86 @@ th {
   float: left !important;
 }
 
+/* line 32, ../../dev/sass/base/_util.scss */
+.u-text-left {
+  text-align: left;
+}
+
+/* line 36, ../../dev/sass/base/_util.scss */
+.u-text-center {
+  text-align: center;
+}
+
+/* line 40, ../../dev/sass/base/_util.scss */
+.u-text-right {
+  text-align: right;
+}
+
+/* line 44, ../../dev/sass/base/_util.scss */
+.u-text-justify {
+  text-align: justify;
+}
+
+/* line 48, ../../dev/sass/base/_util.scss */
+.u-text-nowrap {
+  white-space: nowrap;
+}
+
+/* line 53, ../../dev/sass/base/_util.scss */
+.u-border-right {
+  border-right: 1px solid #eeeeee;
+}
+
+/* line 57, ../../dev/sass/base/_util.scss */
+.u-border-left {
+  border-left: 1px solid #eeeeee;
+}
+
+/* line 61, ../../dev/sass/base/_util.scss */
+.u-border-top {
+  border-top: 1px solid #eeeeee;
+}
+
+/* line 65, ../../dev/sass/base/_util.scss */
+.u-border-bottom {
+  border-bottom: 1px solid #eeeeee;
+}
+
 /* line 1, ../../dev/sass/base/_basic.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 4, ../../dev/sass/base/_basic.scss */
+/* line 5, ../../dev/sass/base/_basic.scss */
 html {
   font-size: 62.5%;
   min-height: 100%;
 }
 
-/* line 8, ../../dev/sass/base/_basic.scss */
+/* line 10, ../../dev/sass/base/_basic.scss */
 body {
   font-size: 14px;
-  line-height: 1;
   line-height: 1.42857143;
 }
 
-/* line 13, ../../dev/sass/base/_basic.scss */
+/* line 15, ../../dev/sass/base/_basic.scss */
 .wrapper {
-  width: 100%;
   padding: 2rem;
+  width: 100%;
 }
 
-/* line 17, ../../dev/sass/base/_basic.scss */
+/* line 20, ../../dev/sass/base/_basic.scss */
 a {
   text-decoration: none;
   color: #00bfff;
 }
-/* line 20, ../../dev/sass/base/_basic.scss */
+/* line 24, ../../dev/sass/base/_basic.scss */
 a:hover {
   text-decoration: underline;
   color: #0086b3;
 }
 
-/* line 25, ../../dev/sass/base/_basic.scss */
+/* line 30, ../../dev/sass/base/_basic.scss */
 p {
   margin: 0 0 10px;
 }
@@ -1009,7 +1053,7 @@ category: Breadcrumbs
 ```
 
 */
-/* line 22, ../../dev/sass/module/_breadcrumb.scss */
+/* line 21, ../../dev/sass/module/_breadcrumb.scss */
 .breadcrumb {
   padding: 1rem 1rem;
   margin-bottom: 2rem;
@@ -1017,17 +1061,17 @@ category: Breadcrumbs
   background-color: transparent;
   border-radius: 5px;
 }
-/* line 29, ../../dev/sass/module/_breadcrumb.scss */
+/* line 28, ../../dev/sass/module/_breadcrumb.scss */
 .breadcrumb > li {
   display: inline-block;
 }
-/* line 32, ../../dev/sass/module/_breadcrumb.scss */
+/* line 31, ../../dev/sass/module/_breadcrumb.scss */
 .breadcrumb > li + li:before {
   content: "/ ";
   padding: 0 5px;
   color: #999;
 }
-/* line 39, ../../dev/sass/module/_breadcrumb.scss */
+/* line 38, ../../dev/sass/module/_breadcrumb.scss */
 .breadcrumb > .active {
   color: #00bfff;
 }
@@ -1763,9 +1807,10 @@ category: Form
 .heading-a {
   font-size: 15px;
   font-size: 1.5rem;
+  color: black;
 }
 
-/* line 15, ../../dev/sass/module/_heading.scss */
+/* line 16, ../../dev/sass/module/_heading.scss */
 .heading-b {
   font-size: 20px;
   font-size: 2rem;
