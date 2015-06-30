@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DMM.Box admin styleguide: Form</title>
+        <link rel="stylesheet" href="styleguide_css/template.css">
+        <link rel="stylesheet" href="../../app/public/css/common.css">
+        <script src="../../app/public/js/lib.js"></script>
+        <script src="../../app/public/js/all.min.js"></script>
+    </head>
+    <body class="styleguide-body">
+        <header class="styleguide-header">
+            <h1>DMM.Box admin styleguide</h1>
+            <nav>
+                <ul>
+                
+                    <li><a href="collapse.html">Collapse</a></li>
+                
+                    <li><a href="breadcrumbs.html">Breadcrumbs</a></li>
+                
+                    <li><a href="button.html">Button</a></li>
+                
+                    <li><a href="dropdown.html">Dropdown</a></li>
+                
+                    <li><a href="form.html">Form</a></li>
+                
+                </ul>
+            </nav>
+        </header>
+        <div class="styleguide-main">
+            <ul>
+            
+                <li><a href="#Form">Form</a></li>
+            
+                <li><a href="#Form-inline">Form-inline</a></li>
+            
+            </ul>
+        <section class="content">
+<h1 id="Form" class="styleguide">Form</h1>
+<p class="styleguide">フォームのスタイル。</p><div class="codeExample">
+  <div class="exampleOutput">
+    <form class="formbox">
+    <div class="form-body">
+       <label>Email address</label>
+       <input type="mail" class="input-a" placeholder="Email">
+    </div>
+    <div class="form-body">
+       <label>Password</label>
+       <input type="text" class="input-a" placeholder="Password">
+    </div>
+    <div class="form-body">
+       <label>ファイル選択</label>
+       <input type="file">
+    </div>
+    <div class="checkbox-body">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"formbox"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"mail"</span> <span class="na">class=</span><span class="s">"input-a"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"input-a"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;</span>ファイル選択<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"file"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"checkbox-body"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;label&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span> Check me out
+      <span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></pre>
+    </div>
+  </div>
+</div>
+
+<h1 id="Form-inline" class="styleguide">Form-inline</h1>
+<p class="styleguide">フォームインラインのスタイル。</p><div class="codeExample">
+  <div class="exampleOutput">
+    <form class="form-inline">
+    <div class="form-body">
+       <label>Email address</label>
+       <input type="mail" class="input-a form-control" placeholder="Email">
+    </div>
+    <div class="form-body">
+       <label>Password</label>
+       <input type="text" class="input-a form-control" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+
+  </div>
+  <div class="codeBlock">
+    <div class="highlight">
+      <pre><span class="nt">&lt;form</span> <span class="na">class=</span><span class="s">"form-inline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"mail"</span> <span class="na">class=</span><span class="s">"input-a form-control"</span> <span class="na">placeholder=</span><span class="s">"Email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-body"</span><span class="nt">&gt;</span>
+       <span class="nt">&lt;label&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+       <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"input-a form-control"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-default"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></pre>
+    </div>
+  </div>
+</div>
+      </section>
+      <footer>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,1 +1,0 @@
-angular.module("invoice2",["finance2"]).controller("InvoiceController",["currencyConverter",function(t){this.qty=1,this.cost=2,this.inCurr="EUR",this.currencies=t.currencies,this.total=function(n){return t.convert(this.qty*this.cost,this.inCurr,n)},this.pay=function(){window.alert("Thanks!")}}]);

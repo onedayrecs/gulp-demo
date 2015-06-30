@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>DMM.Box admin styleguide: <%= title %></title>
+        <link rel="stylesheet" href="styleguide_css/template.css">
+        <link rel="stylesheet" href="../../app/public/css/common.css">
+        <script src="../../app/public/js/lib.js"></script>
+        <script src="../../app/public/js/all.min.js"></script>
+    </head>
+    <body class="styleguide-body">
+        <header class="styleguide-header">
+            <h1>DMM.Box admin styleguide</h1>
+            <nav>
+                <ul>
+                <% @categories.each do |category, file_name| %>
+                    <li><a href="<%= file_name %>"><%= category %></a></li>
+                <% end %>
+                </ul>
+            </nav>
+        </header>
+        <div class="styleguide-main">
+            <ul>
+            <% @blocks.each do |b| %>
+                <li><a href="#<%= b[:name] %>"><%= b[:title] %></a></li>
+            <% end %>
+            </ul>
+        <section class="content">

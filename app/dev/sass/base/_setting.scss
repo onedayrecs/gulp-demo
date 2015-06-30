@@ -1,3 +1,25 @@
+//color
+$color-a:#ccc;
+$color-b:#999;
+$color-c:#00bfff;
+$link-color:#00bfff;
+$body-bg:#fff;
+
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+$brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+
+//** Global color for active items (e.g., navs or dropdowns).
+$component-active-color:    #fff !default;
+//** Global background color for active items (e.g., navs or dropdowns).
+$component-active-bg:       $brand-primary !default;
+
 // clum width
 $gutter: 0;
 $size_max: 1080px;
@@ -6,22 +28,38 @@ $size_min: 320px;
 // scale (sprite生成で使用)
 $default-scale:1;
 
+$border-radius-base:        4px !default;
+$border-radius-large:       6px !default;
+$border-radius-small:       3px !default;
+
 //btn
 $btn-default-color:#000;
 $btn-default-bg:#fff;
 $btn-default-border:#000;
 
-$btn-next-color:#fff;
-$btn-next-bg:#008000;
-$btn-next-border:#ccc;
-
 $btn-register-color:#fff;
-$btn-register-bg:#ffa500;
-$btn-register-border:#ccc;
+$btn-register-bg:#1A82C3;
+$btn-register-border:darken($btn-register-bg,15%);
 
-$btn-save-color:#fff;
-$btn-save-bg:#696969;
-$btn-save-border:#000;
+$btn-delete-color:#fff;
+$btn-delete-bg:#D9534F;
+$btn-delete-border:darken($btn-delete-bg,15%);
+
+$btn-edit-color:#fff;
+$btn-edit-bg:#ffa500;
+$btn-edit-border:darken($btn-edit-bg,15%);
+
+$btn-cancel-color:#1A82C3;
+$btn-cancel-bg:#fff;
+$btn-cancel-border:darken($btn-cancel-color,15%);
+
+$btn-next-color:#fff;
+$btn-next-bg:#26B99A;
+$btn-next-border:darken($btn-next-bg,15%);
+
+$btn-back-color:#fff;
+$btn-back-bg:#696969;
+$btn-back-border:darken($btn-back-bg,15%);
 
 //breadcrumb
 $breadcrumb-padding-vertical:1rem;
@@ -35,13 +73,6 @@ $breadcrumb-separator:          "/" !default;
 
 //border
 $border-radius-base:5px;
-
-//color
-$color-a:#ccc;
-$color-b:#999;
-$color-c:#00bfff;
-$link-color:#0086b3;
-$body-bg:#fff;
 
 //boot
 $line-height-computed: 2rem;
@@ -60,3 +91,110 @@ $thumbnail-border: #ccc;
 $thumbnail-border-radius: 5px;
 $thumbnail-caption-padding:1rem;
 $thumbnail-caption-color: #999;
+
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+$dropdown-bg:                    #fff !default;
+//** Dropdown menu `border-color`.
+$dropdown-border:                rgba(0,0,0,.15) !default;
+//** Dropdown menu `border-color` **for IE8**.
+$dropdown-fallback-border:       #ccc !default;
+//** Divider color for between dropdown items.
+$dropdown-divider-bg:            #e5e5e5 !default;
+
+//** Dropdown link text color.
+$dropdown-link-color:            $gray-dark !default;
+//** Hover color for dropdown links.
+$dropdown-link-hover-color:      darken($gray-dark, 5%) !default;
+//** Hover background for dropdown links.
+$dropdown-link-hover-bg:         #f5f5f5 !default;
+
+//** Active dropdown menu item text color.
+$dropdown-link-active-color:     $component-active-color !default;
+//** Active dropdown menu item background color.
+$dropdown-link-active-bg:        $component-active-bg !default;
+
+//** Disabled dropdown menu item background color.
+$dropdown-link-disabled-color:   $gray-light !default;
+
+//** Text color for headers within dropdown menus.
+$dropdown-header-color:          $gray-light !default;
+
+//** Deprecated `$dropdown-caret-color` as of v3.1.0
+$dropdown-caret-color:           #000 !default;
+//** Width of the `border` for generating carets that indicator dropdowns.
+$caret-width-base:          4px !default;
+//** Carets increase slightly in size for larger components.
+$caret-width-large:         5px !default;
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+$zindex-navbar:            1000 !default;
+$zindex-dropdown:          1000 !default;
+$zindex-popover:           1060 !default;
+$zindex-tooltip:           1070 !default;
+$zindex-navbar-fixed:      1030 !default;
+$zindex-modal-background:  1040 !default;
+$zindex-modal:             1050 !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base:        $font-family-sans-serif !default;
+
+$font-size-base:          14px !default;
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//== Wells
+//
+//##
+
+$well-bg:                     #f5f5f5 !default;
+$well-border:                 darken($well-bg, 7%) !default;
+
+
+//== Panels
+//
+//##
+
+$panel-bg:                    #fff !default;
+$panel-body-padding:          15px !default;
+$panel-heading-padding:       10px 15px !default;
+$panel-footer-padding:        $panel-heading-padding !default;
+$panel-border-radius:         $border-radius-base !default;
+
+//** Border color for elements within panels
+$panel-inner-border:          #ddd !default;
+$panel-footer-bg:             #f5f5f5 !default;
+
+$panel-default-text:          $gray-dark !default;
+$panel-default-border:        #ddd !default;
+$panel-default-heading-bg:    #f5f5f5 !default;

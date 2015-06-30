@@ -1,22 +1,26 @@
-/*
- #ボタン
- 
-ボタンです
- 
-## 汎用ボタン
- 
-    <button class="btn btn-default" href="#">ボタン</button>
-    <button class="btn btn-next" href="#">ボタン</button>
-    <button class="btn btn-register" href="#">ボタン</button>
-    <button class="btn btn-save" href="#">ボタン</button>
-    <button class="btn btn-middle" href="#">ボタン</button>
- 
+/*doc
+---
+title: Button Color
+category: Button
+---
+
+ボタンのスタイル。
+
+```html_example
+    <button class="btn btn-default" href="#">デフォルトボタン</button>
+    <button class="btn btn-register" href="#">登録ボタン</button>
+    <button class="btn btn-delete" href="#">削除ボタン</button>
+    <button class="btn btn-edit" href="#">編集ボタン</button>
+    <button class="btn btn-next" href="#">次へボタン</button>
+    <button class="btn btn-back" href="#">戻るボタン</button>
+    <button class="btn btn-cancel" href="#">キャンセルボタン</button>
+```
+
 */
 .btn {
   display: inline-block;
   padding: 6px 2rem;
   min-width: 10rem;
-  @inclide rem(14);
   margin-bottom: 0; // For input.btn
   @include rem(15);
   font-weight: 400;
@@ -37,15 +41,38 @@
 .btn-default {
   @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
-.btn-next {
-  @include button-variant($btn-next-color, $btn-next-bg, $btn-next-border);
-}
 .btn-register {
   @include button-variant($btn-register-color, $btn-register-bg, $btn-register-border);
 }
-.btn-save {
-  @include button-variant($btn-save-color, $btn-save-bg, $btn-save-border);
+.btn-delete {
+  @include button-variant($btn-delete-color, $btn-delete-bg, $btn-delete-border);
 }
+.btn-edit {
+  @include button-variant($btn-edit-color, $btn-edit-bg, $btn-edit-border);
+}
+.btn-next {
+  @include button-variant($btn-next-color, $btn-next-bg, $btn-next-border);
+}
+.btn-back {
+  @include button-variant($btn-back-color, $btn-back-bg, $btn-back-border);
+}
+.btn-cancel {
+  @include button-variant($btn-cancel-color, $btn-cancel-bg, $btn-cancel-border);
+}
+/*doc
+---
+title: Button Size
+category: Button
+---
+
+ボタンのサイズ。
+
+```html_example
+    <button class="btn btn-default btn-middle" href="#">ミドルサイズボタン</button>
+    <button class="btn btn-register btn-middle" href="#">ミドルサイズボタン</button>
+```
+
+*/
 .btn-middle{
   padding-left:5rem;
   padding-right:5rem;
