@@ -46,7 +46,7 @@ gulp.task('compass', function(){
  });
 //styledocco
 gulp.task('styledocco', function () {
-  gulp.src('app/public/css/guide/common.css')
+  gulp.src('app/dev/sass/**/*.scss')//app/public/css/guide/common.css
     .pipe(styledocco({
       out: 'docs',
       name: 'Style Guide',
