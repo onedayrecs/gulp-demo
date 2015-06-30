@@ -1097,12 +1097,12 @@ category: Button
 */
 /* line 20, ../../dev/sass/module/_button.scss */
 .btn {
+  font-size: 15px;
+  font-size: 1.5rem;
   display: inline-block;
   padding: 6px 2rem;
   min-width: 10rem;
   margin-bottom: 0;
-  font-size: 15px;
-  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
@@ -1142,7 +1142,7 @@ category: Button
   background-color: #000;
 }
 
-/* line 44, ../../dev/sass/module/_button.scss */
+/* line 45, ../../dev/sass/module/_button.scss */
 .btn-register {
   color: #fff;
   background-color: #1A82C3;
@@ -1169,7 +1169,7 @@ category: Button
   background-color: #fff;
 }
 
-/* line 47, ../../dev/sass/module/_button.scss */
+/* line 49, ../../dev/sass/module/_button.scss */
 .btn-delete {
   color: #fff;
   background-color: #D9534F;
@@ -1196,7 +1196,7 @@ category: Button
   background-color: #fff;
 }
 
-/* line 50, ../../dev/sass/module/_button.scss */
+/* line 53, ../../dev/sass/module/_button.scss */
 .btn-edit {
   color: #fff;
   background-color: #ffa500;
@@ -1223,7 +1223,7 @@ category: Button
   background-color: #fff;
 }
 
-/* line 53, ../../dev/sass/module/_button.scss */
+/* line 57, ../../dev/sass/module/_button.scss */
 .btn-next {
   color: #fff;
   background-color: #26B99A;
@@ -1250,7 +1250,7 @@ category: Button
   background-color: #fff;
 }
 
-/* line 56, ../../dev/sass/module/_button.scss */
+/* line 61, ../../dev/sass/module/_button.scss */
 .btn-back {
   color: #fff;
   background-color: #696969;
@@ -1277,7 +1277,7 @@ category: Button
   background-color: #fff;
 }
 
-/* line 59, ../../dev/sass/module/_button.scss */
+/* line 65, ../../dev/sass/module/_button.scss */
 .btn-cancel {
   color: #1A82C3;
   background-color: #fff;
@@ -1318,10 +1318,39 @@ category: Button
 ```
 
 */
-/* line 76, ../../dev/sass/module/_button.scss */
+/* line 83, ../../dev/sass/module/_button.scss */
 .btn-middle {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+/* line 6, ../../dev/sass/module/_close.scss */
+.close {
+  float: right;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+}
+/* line 15, ../../dev/sass/module/_close.scss */
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 30, ../../dev/sass/module/_close.scss */
+button.close {
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  -webkit-appearance: none;
 }
 
 /*doc
@@ -1330,26 +1359,25 @@ title: Collapse
 category: Collapse
 ---
 
-コラプスのスタイル。
+    コラプスのスタイル。
 
 ```html_example
-<p>
-<a class="btn btn-register" role="button" data-toggle="collapse" href="#collapseExample">
-  Link with href
-</a>
-<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample">
-  Button with data-target
-</button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="well">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
+    <p>
+    <a class="btn btn-register" role="button" data-toggle="collapse" href="#collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample">
+      Button with data-target
+    </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="well">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
 ```
-
 */
-/* line 26, ../../dev/sass/module/_collapse.scss */
+/* line 25, ../../dev/sass/module/_collapse.scss */
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -1389,47 +1417,46 @@ title: Accordion example
 category: Collapse
 ---
 
-アコーディオンのスタイル。
+    アコーディオンのスタイル。
 
 ```html_example
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          コラプスグループアイテム #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              コラプスグループアイテム #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              コラプスグループアイテム #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          コラプスグループアイテム #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-      </div>
-    </div>
-  </div>
-</div>
 ```
-
 */
 /*doc
 ---
@@ -1454,7 +1481,7 @@ category: Dropdown
 ```
 
 */
-/* line 30, ../../dev/sass/module/_dropdown.scss */
+/* line 26, ../../dev/sass/module/_dropdown.scss */
 .caret {
   display: inline-block;
   width: 0;
@@ -1466,18 +1493,18 @@ category: Dropdown
   border-left: 4px solid transparent;
 }
 
-/* line 42, ../../dev/sass/module/_dropdown.scss */
+/* line 38, ../../dev/sass/module/_dropdown.scss */
 .dropup,
 .dropdown {
   position: relative;
 }
 
-/* line 48, ../../dev/sass/module/_dropdown.scss */
+/* line 44, ../../dev/sass/module/_dropdown.scss */
 .dropdown-toggle:focus {
   outline: 0;
 }
 
-/* line 53, ../../dev/sass/module/_dropdown.scss */
+/* line 49, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -1499,19 +1526,19 @@ category: Dropdown
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
 }
-/* line 76, ../../dev/sass/module/_dropdown.scss */
+/* line 72, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu.pull-right {
   right: 0;
   left: auto;
 }
-/* line 82, ../../dev/sass/module/_dropdown.scss */
+/* line 78, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu .divider {
   height: 1px;
   margin: 0rem 0;
   overflow: hidden;
   background-color: #e5e5e5;
 }
-/* line 87, ../../dev/sass/module/_dropdown.scss */
+/* line 83, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu > li > a {
   display: block;
   padding: 3px 20px;
@@ -1521,15 +1548,13 @@ category: Dropdown
   color: #333333;
   white-space: nowrap;
 }
-
-/* line 100, ../../dev/sass/module/_dropdown.scss */
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+/* line 93, ../../dev/sass/module/_dropdown.scss */
+.dropdown-menu:hover, .dropdown-menu:focus {
   text-decoration: none;
   color: #262626;
   background-color: #f5f5f5;
 }
-
-/* line 110, ../../dev/sass/module/_dropdown.scss */
+/* line 101, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
   color: #fff;
   text-decoration: none;
@@ -1537,11 +1562,11 @@ category: Dropdown
   background-color: #337ab7;
 }
 
-/* line 125, ../../dev/sass/module/_dropdown.scss */
+/* line 117, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   color: #777777;
 }
-/* line 132, ../../dev/sass/module/_dropdown.scss */
+/* line 124, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
   text-decoration: none;
   background-color: transparent;
@@ -1550,28 +1575,28 @@ category: Dropdown
   cursor: not-allowed;
 }
 
-/* line 145, ../../dev/sass/module/_dropdown.scss */
+/* line 137, ../../dev/sass/module/_dropdown.scss */
 .open > .dropdown-menu {
   display: block;
 }
-/* line 150, ../../dev/sass/module/_dropdown.scss */
+/* line 142, ../../dev/sass/module/_dropdown.scss */
 .open > a {
   outline: 0;
 }
 
-/* line 159, ../../dev/sass/module/_dropdown.scss */
+/* line 151, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu-right {
   left: auto;
   right: 0;
 }
 
-/* line 169, ../../dev/sass/module/_dropdown.scss */
+/* line 161, ../../dev/sass/module/_dropdown.scss */
 .dropdown-menu-left {
   left: 0;
   right: auto;
 }
 
-/* line 175, ../../dev/sass/module/_dropdown.scss */
+/* line 167, ../../dev/sass/module/_dropdown.scss */
 .dropdown-header {
   display: block;
   padding: 3px 20px;
@@ -1581,7 +1606,7 @@ category: Dropdown
   white-space: nowrap;
 }
 
-/* line 185, ../../dev/sass/module/_dropdown.scss */
+/* line 177, ../../dev/sass/module/_dropdown.scss */
 .dropdown-backdrop {
   position: fixed;
   left: 0;
@@ -1591,20 +1616,20 @@ category: Dropdown
   z-index: 990;
 }
 
-/* line 195, ../../dev/sass/module/_dropdown.scss */
+/* line 187, ../../dev/sass/module/_dropdown.scss */
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto;
 }
 
-/* line 208, ../../dev/sass/module/_dropdown.scss */
+/* line 200, ../../dev/sass/module/_dropdown.scss */
 .dropup .caret,
 .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid;
   content: "";
 }
-/* line 214, ../../dev/sass/module/_dropdown.scss */
+/* line 206, ../../dev/sass/module/_dropdown.scss */
 .dropup .dropdown-menu,
 .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
@@ -1833,6 +1858,210 @@ category: Form
   font-size: 1.5rem;
 }
 
+/*doc
+---
+title: Modals
+category: Modals
+---
+
+    モーダルのスタイル。
+
+```html_example
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-register btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-back" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-register">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+```
+*/
+/* line 42, ../../dev/sass/module/_modal.scss */
+.modal-open {
+  overflow: hidden;
+}
+
+/* line 47, ../../dev/sass/module/_modal.scss */
+.modal {
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+/* line 63, ../../dev/sass/module/_modal.scss */
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, -25%);
+  -ms-transform: translate(0, -25%);
+  -o-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  -moz-transition: -moz-transform 0.3s ease-out;
+  -o-transition: -o-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+}
+/* line 67, ../../dev/sass/module/_modal.scss */
+.modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/* line 69, ../../dev/sass/module/_modal.scss */
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 75, ../../dev/sass/module/_modal.scss */
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+
+/* line 82, ../../dev/sass/module/_modal.scss */
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  background-clip: padding-box;
+  outline: 0;
+}
+
+/* line 95, ../../dev/sass/module/_modal.scss */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: #000;
+}
+/* line 104, ../../dev/sass/module/_modal.scss */
+.modal-backdrop.fade {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* line 105, ../../dev/sass/module/_modal.scss */
+.modal-backdrop.in {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/* line 110, ../../dev/sass/module/_modal.scss */
+.modal-header {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+  min-height: 16.3px;
+}
+
+/* line 116, ../../dev/sass/module/_modal.scss */
+.modal-header .close {
+  margin-top: -2px;
+}
+
+/* line 121, ../../dev/sass/module/_modal.scss */
+.modal-title {
+  margin: 0;
+  line-height: 1.3;
+}
+
+/* line 128, ../../dev/sass/module/_modal.scss */
+.modal-body {
+  position: relative;
+  padding: 15px;
+}
+
+/* line 134, ../../dev/sass/module/_modal.scss */
+.modal-footer {
+  padding: 15px;
+  text-align: right;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 150, ../../dev/sass/base/default/_mixin.scss */
+.modal-footer:before, .modal-footer:after {
+  content: " ";
+  display: table;
+}
+/* line 155, ../../dev/sass/base/default/_mixin.scss */
+.modal-footer:after {
+  clear: both;
+}
+/* line 141, ../../dev/sass/module/_modal.scss */
+.modal-footer .btn + .btn {
+  margin-left: 5px;
+  margin-bottom: 0;
+}
+/* line 146, ../../dev/sass/module/_modal.scss */
+.modal-footer .btn-group .btn + .btn {
+  margin-left: -1px;
+}
+/* line 150, ../../dev/sass/module/_modal.scss */
+.modal-footer .btn-block + .btn-block {
+  margin-left: 0;
+}
+
+/* line 156, ../../dev/sass/module/_modal.scss */
+.modal-scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+@media (min-width: 768px) {
+  /* line 167, ../../dev/sass/module/_modal.scss */
+  .modal-dialog {
+    width: 600px;
+    margin: 30px auto;
+  }
+
+  /* line 171, ../../dev/sass/module/_modal.scss */
+  .modal-content {
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  /* line 176, ../../dev/sass/module/_modal.scss */
+  .modal-sm {
+    width: 300px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 180, ../../dev/sass/module/_modal.scss */
+  .modal-lg {
+    width: 900px;
+  }
+}
 /* line 7, ../../dev/sass/module/_panels.scss */
 .panel {
   margin-bottom: 2rem;

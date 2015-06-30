@@ -4,48 +4,48 @@ title: Collapse
 category: Collapse
 ---
 
-コラプスのスタイル。
+    コラプスのスタイル。
 
 ```html_example
-<p>
-<a class="btn btn-register" role="button" data-toggle="collapse" href="#collapseExample">
-  Link with href
-</a>
-<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample">
-  Button with data-target
-</button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="well">
-      Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>
+    <p>
+    <a class="btn btn-register" role="button" data-toggle="collapse" href="#collapseExample">
+      Link with href
+    </a>
+    <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample">
+      Button with data-target
+    </button>
+    </p>
+    <div class="collapse" id="collapseExample">
+      <div class="well">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+      </div>
+    </div>
 ```
-
 */
 .fade {
-  opacity: 0;
-  @include transition(opacity .15s linear);
-  &.in {
-    opacity: 1;
-  }
+    opacity: 0;
+    @include transition(opacity .15s linear);
+
+    &.in {
+        opacity: 1;
+    }
 }
 
 .collapse {
-  display: none;
+    display: none;
 
-  &.in      { display: block; }
-  // [converter] extracted tr&.in to tr.collapse.in
-  // [converter] extracted tbody&.in to tbody.collapse.in
+    &.in      { display: block; }
+// [converter] extracted tr&.in to tr.collapse.in
+// [converter] extracted tbody&.in to tbody.collapse.in
 }
 
 .collapsing {
-  position: relative;
-  height: 0;
-  overflow: hidden;
-  @include transition-property(height, visibility);
-  @include transition-duration(.35s);
-  @include transition-timing-function(ease);
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    @include transition-property(height, visibility);
+    @include transition-duration(.35s);
+    @include transition-timing-function(ease);
 }
 
 /*doc
@@ -54,45 +54,44 @@ title: Accordion example
 category: Collapse
 ---
 
-アコーディオンのスタイル。
+    アコーディオンのスタイル。
 
 ```html_example
-<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          コラプスグループアイテム #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
-        コラプスグループアイテム内容①
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingOne">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              コラプスグループアイテム #1
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+          <div class="panel-body">
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+            コラプスグループアイテム内容①
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="headingTwo">
+          <h4 class="panel-title">
+            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              コラプスグループアイテム #2
+            </a>
+          </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+          <div class="panel-body">
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+            コラプスグループアイテム内容②
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          コラプスグループアイテム #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-        コラプスグループアイテム内容②
-      </div>
-    </div>
-  </div>
-</div>
 ```
-
 */
